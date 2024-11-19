@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    min-width: 200px;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #DDD;
+    background-color: #444;
+    height: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.container h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.container p {
+    margin-bottom: 30px;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.container_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul,
+nav li {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 10px;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+#biography {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: #555;
+    text-align: justify;
+}
+
+.biography_text {
+    display: flex;
+    column-gap: 50px;
+}
+
+.text_column {
+    flex: 1;
+}
+
+.container_books {
+    display: flex;
+}
+
+.container_books h3 {
+    margin: 0;
+}
+
+.container_images {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex: 1;
+}
+
+.book_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book_image img {
+    width: 500px;
+    height: auto;
+}
+
+.book_title {
+    padding: 20px;
+    font-size: 19px;
+}
+
+.book_title a {
+    text-decoration: none;
+    color: #DDD;
+}
+
+.book_title a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    color: #DDD;
+    background-color: #000;
+    padding: 15px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.container_footer a{
+    text-decoration: none;
+    color: #DDD;
+}
+
+.container_footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:1800px) {
+    .book_image img {
+        width: 400px;
+    }
+}
+
+@media (max-width:1500px) {
+    .book_image img {
+        width: 350px;
+    }
+}
+
+@media (max-width:1360px) {
+    .book_image img {
+        width: 300px;
+    }
+}
+
+@media (max-width:1200px) {
+    .biography_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 615px) {
+    .container {
+        padding: 70px;
+    }
+
+    .container_menu {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:550px) {
+    .container {
+        padding: 50px;
+    }
+}
+
+@media (max-width:450px) {
+    .container {
+        padding: 30px;
+    }
+    .book_image img {
+        width: 200px;
+    }
+}
